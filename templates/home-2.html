@@ -1,0 +1,55 @@
+﻿ <li class="product has-post-thumbnail first instock purchasable">
+                                                                    <div class="post_item_wrap">
+                                                                        <div class="post_featured">
+                                                                            <div class="post_thumb">
+                                                                                <a class="hover_icon hover_icon_link" href="single-product.html">
+                                                                                    <img src="{{i.image.url}}" class="attachment-shop_catalog size-shop_catalog" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="post_content">
+                                                                            <h2 class="woocommerce-loop-product__title">{{i.name}}</h2>
+                                                                            <span class="price">
+                                                                                <span class="woocommerce-Price-amount amount">
+                                                                                    <span class="woocommerce-Price-currencySymbol">&#36;</span>{{i.price}}
+                                                                                </span> &ndash;
+
+                                                                            </span>
+                                                                            <a rel="nofollow" href="single-product.html" data-quantity="1" data-product_id="471" data-product_sku="" class="button add_to_cart_button">Select options</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+
+
+
+
+     <div class="product has-post-thumbnail first instock purchasable">
+
+                            <div class="images">
+                                <a href="{% static 'images/product-6.jpg' %}" class="woocommerce-main-image zoom" title="" data-rel="prettyPhoto">
+                                    <img width="600" height="765" src="{{product.image.url}}" class="attachment-shop_single size-shop_single " alt=""></a>
+                            </div>
+                            <div class="summary entry-summary">
+                                <h1 class="product_title entry-title">{{product.name}}</h1>
+
+                                <div class="woocommerce-product-details__short-description">
+                                    <p>
+                                       {{product.description}}
+                                    </p>
+                                </div>
+                                <form class="variations_form cart" method="post" enctype='multipart/form-data' data-product_id="412" data-product_variations="">
+                                    <table class="variations" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="label">
+                                                <label>Price</label>
+                                            </td>
+                                            <td >
+   <p class="price">
+                                    <span class="woocommerce-Price-amount amount">
+                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>{{product.price}}
+                                    </span> &ndash;
+
+                                </p>                                            </td>
+                                        </tr>

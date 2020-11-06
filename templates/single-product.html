@@ -1,0 +1,322 @@
+﻿{% load static %}
+<html lang="en-US" class="scheme_original">
+<!-- Copied from http://dairy-farm-html.ancorathemes.com/ by Cyotek WebCopy 1.7.0.600, Friday, March 27, 2020, 1:26:18 PM -->
+
+<head>
+    <title>Dairy Farm</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Average|Droid+Serif:400,700|Libre+Baskerville:400,400i,700|Open+Sans:300,400,600,700,800|Oswald:300,400,700|Raleway:100,200,300,400,500,600,700,800,900&subset=latin-ext' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "css/layout.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "js/vendor/revslider/settings.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "js/vendor/woo/woocommerce-layout.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "js/vendor/woo/woocommerce-smallscreen.css "%}' type='text/css' media='only screen and (max-width: 768px)'>
+    <link rel='stylesheet' href='{% static "js/vendor/woo/woocommerce.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "css/fontello/css/fontello.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "css/style.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "css/core.animation.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "css/shortcodes.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "css/theme.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "js/vendor/woo/plugin.woocommerce.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "css/custom.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "css/responsive.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "js/vendor/comp/comp.min.css "%}' type='text/css' media='all'>
+    <link rel='stylesheet' href='{% static "js/vendor/swiper/swiper.css "%}' type='text/css' media='all'>
+</head>
+
+<body class="product-template-default single single-product woocommerce woocommerce-page body_style_wide body_filled article_style_stretch layout_single-standard template_single-standard scheme_original top_panel_show top_panel_above sidebar_hide sidebar_outer_hide vc_responsive">
+
+<a id="toc_home" class="sc_anchor" title="Home" data-description="&lt;i&gt;Return to Home&lt;/i&gt; - &lt;br&gt;navigate to home page of the site" data-icon="icon-home" data-url="index.html" data-separator="yes"></a>
+<a id="toc_top" class="sc_anchor" title="To Top" data-description="&lt;i&gt;Back to top&lt;/i&gt; - &lt;br&gt;scroll to top of the page" data-icon="icon-double-up" data-url="" data-separator="yes"></a>
+
+<div class="body_wrap">
+    <div class="page_wrap">
+        <div class="top_panel_fixed_wrap"></div>
+        <header class="top_panel_wrap top_panel_style_1 scheme_original">
+            <div class="top_panel_wrap_inner top_panel_inner_style_1 top_panel_position_above">
+                <div class="top_panel_top">
+                    <div class="content_wrap clearfix">
+                        <div class="top_panel_top_contact_area icons icon-phone-1">1(800)-456-789 </div>
+                        <div class="top_panel_top_open_hours icons icon-clock-1">Mn-Fr: 8am - 8pm, St-Sn: 8am - 4pm</div>
+                        <div class="top_panel_top_user_area">
+                            <div class="top_panel_top_socials">
+                                <div class="sc_socials sc_socials_type_icons sc_socials_shape_square sc_socials_size_tiny">
+                                    <div class="sc_socials_item">
+                                        <a href="#" target="_blank" class="social_icons social_twitter">
+                                            <span class="icon-twitter"></span>
+                                        </a>
+                                    </div>
+                                    <div class="sc_socials_item">
+                                        <a href="#" target="_blank" class="social_icons social_facebook">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </div>
+                                    <div class="sc_socials_item">
+                                        <a href="#" target="_blank" class="social_icons social_gplus-1">
+                                            <span class="icon-gplus-1"></span>
+                                        </a>
+                                    </div>
+                                    <div class="sc_socials_item">
+                                        <a href="#" target="_blank" class="social_icons social_linkedin">
+                                            <span class="icon-linkedin"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul id="menu_user" class="menu_user_nav">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_panel_middle">
+                    <div class="content_wrap">
+                        <div class="columns_wrap columns_fluid">
+                            <div class="column-4_5 contact_logo">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static 'images/logo.png' %}" class="logo_main" alt="" width="239" height="59"></a>
+                                </div>
+                            </div>
+                            {% if item_count > 0 %}
+                            <div class="column-1_5 contact_field contact_cart">
+                                <a href="#" class="top_panel_cart_button" data-items="0" data-summa="&#036;0.00">
+                                    <span class="contact_icon icon-1"></span>
+                                    <span class="contact_label contact_cart_label">cart:</span>
+                                    <span class="contact_cart_totals">
+                                        <span class="cart_items">{{item_count }}</span>
+                                        <span class="cart_summa"></span>
+                                    </span>
+                                </a>
+                                <ul class="widget_area sidebar_cart sidebar">
+                                    <li>
+                                        <div class="widget woocommerce widget_shopping_cart">
+                                            <div class="hide_cart_widget_if_empty">
+                                                <div class="widget_shopping_cart_content">
+                                                    <p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="top_panel_bottom">
+                    <div class="content_wrap clearfix">
+                        <nav class="menu_main_nav_area menu_hover_fade">
+                            <ul id="menu_main" class="menu_main_nav">
+                                <li class="menu-item menu-item-has-children"><a href="/"><span>Home</span></a>
+
+                                </li>
+                                <li class="menu-item menu-item-has-children"><a href="/shop"><span>Products</span></a>
+
+                                </li>
+                                <li class="menu-item"><a href="/masonary"><span>Gallery</span></a></li>
+
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header_mobile">
+            <div class="content_wrap">
+                <div class="menu_button icon-menu"></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="{ static 'images/logo.png' %}" class="logo_main" alt="" width="239" height="59">
+                    </a>
+                </div>
+            </div>
+            <div class="side_wrap">
+                <div class="close">Close</div>
+                <div class="panel_top">
+                    <nav class="menu_main_nav_area">
+                        <ul id="menu_mobile" class="menu_main_nav">
+                            <li class="menu-item menu-item-has-children"><a href="#"><span>Home</span></a>
+
+                            </li>
+                            <li class="menu-item menu-item-has-children"><a href="#"><span>About us</span></a>
+                                <ul class="sub-menu">
+                                        <ul class="sub-menu">
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children"><a href="#"><span>Gallery</span></a>
+                                        <ul class="sub-menu">
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="farm.html"><span>Farm</span></a></li>
+                                    <li class="menu-item menu-item-has-children"><a href="#"><span>Portfolio</span></a>
+                                        <ul class="sub-menu">
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="panel_bottom"></div>
+            </div>
+            <div class="mask"></div>
+        </div>
+        <div class="top_panel_title top_panel_style_1 title_present navi_present breadcrumbs_present scheme_original">
+            <div class="bg_cust_1 top_panel_title_inner top_panel_inner_style_1 title_present_inner breadcrumbs_present_inner">
+                <div class="content_wrap">
+                    <div class="post_navi"></div>
+                    <div class="breadcrumbs">
+                        <a class="breadcrumbs_item home" href="index.html">Home</a>
+                        <span class="breadcrumbs_delimiter"></span>
+                        <a class="breadcrumbs_item all" href="shop.html">Shop</a>
+                        <span class="breadcrumbs_delimiter"></span>
+                        <a class="breadcrumbs_item cat_post" href="#">Yoghurt</a>
+                        <span class="breadcrumbs_delimiter"></span>
+                        <span class="breadcrumbs_item current">Parmesan Cheese</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page_content_wrap page_paddings_yes">
+            <div class="content_wrap">
+                <div class="content">
+                    <article class="post_item post_item_single post_item_product">
+                        <nav class="woocommerce-breadcrumb">
+                            <a href="index.html">Home</a>&nbsp;&#47;&nbsp;
+                            <a href="#">Yoghurt</a>&nbsp;&#47;&nbsp;Parmesan Cheese
+                        </nav>
+                        <div class="product has-post-thumbnail first instock purchasable">
+
+                            <div class="images">
+                                <a href="images/product-6.jpg" class="woocommerce-main-image zoom" title="" data-rel="prettyPhoto">
+                                    <img width="600" height="765" src="{{product.image.url}}" class="attachment-shop_single size-shop_single " alt=""></a>
+                            </div>
+                            <div class="summary entry-summary">
+                                <h1 class="product_title entry-title">{{product.name}}</h1>
+
+                                <div class="woocommerce-product-details__short-description">
+                                    <p>
+                                       {{product.description}}
+                                    </p>
+                                </div>
+                                <form class="variations_form cart" method="post" enctype='multipart/form-data' data-product_id="412" data-product_variations="">
+                                    <table class="variations" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="label">
+                                                <label >Price</label>
+                                            </td>
+                                            <td class="value">
+                                            <p class="price">
+                                    <span class="woocommerce-Price-amount amount">
+                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>{{product.price}}
+                                    </span>
+
+                                </p>
+                                            </td>
+                                        </tr>
+<!--                                        <tr>-->
+<!--                                            <td class="label">-->
+<!--                                                <label for="pa_fat">Fat</label>-->
+<!--                                            </td>-->
+<!--                                            <td class="value">-->
+<!--                                                <select id="pa_fat" class="" name="attribute_pa_fat" data-attribute_name="attribute_pa_fat" data-show_option_none="yes">-->
+<!--                                                    <option value="">Choose an option</option>-->
+<!--                                                    <option value="2">2%</option>-->
+<!--                                                    <option value="3-5">3.5%</option>-->
+<!--                                                    <option value="low-fat">Low Fat</option>-->
+<!--                                                </select>-->
+<!--                                                <a class="reset_variations" href="#">Clear</a>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+                                        </tbody>
+                                    </table>
+                                    <div class="single_variation_wrap">
+                                        <div class="woocommerce-variation single_variation"></div>
+                                        <div class="woocommerce-variation-add-to-cart variations_button">
+<!--                                            <div class="quantity">-->
+<!--                                                <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric">-->
+<!--                                            </div>-->
+                                            <a href="/shop" class="sc_button sc_button_square sc_button_style_filled sc_button_size_small"> View All Products</a>
+                                            <a href="{% url 'cart:add_cart' product.id %}" class="sc_button sc_button_square sc_button_style_filled sc_button_size_small"> Add to Cart</a>
+<!--                                           <a class="btn btn-secondary" href="">Add to Cart</a>-->
+                                            <input type="hidden" name="add-to-cart" value="412">
+                                            <input type="hidden" name="product_id" value="412">
+                                            <input type="hidden" name="variation_id" class="variation_id" value="0">
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="product_meta">
+<!--                                    <span class="sku_wrapper">SKU: <span class="sku">N/A</span></span>-->
+                                    <span class="posted_in">Category: <a href="#" rel="tag">{{product.category}}</a></span>
+<!--                                    <span class="tagged_as">Tags: <a href="http://dairy-farm.ancorathemes.com/product-tag/cream/" rel="tag">cream</a>, <a href="http://dairy-farm.ancorathemes.com/product-tag/italian/" rel="tag">italian</a></span>-->
+                                    <span class="product_id">Product ID: <span>{{product.id}}</span></span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright_wrap copyright_style_menu scheme_original">
+            <div class="copyright_wrap_inner">
+                <div class="content_wrap">
+<!--                    <ul id="menu_footer" class="menu_footer_nav">-->
+<!--                        <li class="menu-item"><a href="farm.html"><span>FAQ</span></a></li>-->
+<!--                        <li class="menu-item"><a href="classic.html"><span>News</span></a></li>-->
+<!--                        <li class="menu-item"><a href="contacts.html"><span>Contact Us</span></a></li>-->
+<!--                    </ul>-->
+                    <div class="copyright_text">
+                        <p>Websbeetle ©  All Rights Reserved
+<!--                            <a href="http://ancorathemes.com/about/">Terms of Use</a> and-->
+<!--                            <a href="http://ancorathemes.com/about/">Privacy Policy</a>-->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#" class="scroll_to_top icon-up" title="Scroll to top"></a>
+<div class="custom_html_section"></div>
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='{% static "js/vendor/jquery/jquery.js"%}'></script>
+<script type='text/javascript' src='{% static "js/vendor/jquery/jquery-migrate.min.js" %}'></script>
+<script type='text/javascript' src='{% static "js/custom/custom.js" %}'></script>
+<script type='text/javascript' src='{% static "js/vendor/esg/jquery.themepunch.tools.min.js" %}'></script>
+<script type='text/javascript' src='{% static "js/vendor/revslider/jquery.themepunch.revolution.min.js" %}'></script>
+<script type='text/javascript' src='{% static "js/vendor/revslider/extensions/revolution.extension.actions.min.js" %}'></script>
+<script type='text/javascript' src='{% static "js/vendor/revslider/extensions/revolution.extension.layeranimation.min.js" %}'></script>
+<script type='text/javascript' src='{% static "js/vendor/revslider/extensions/revolution.extension.navigation.min.js" %}'></script>
+<script type='text/javascript' src='{% static "js/vendor/revslider/extensions/revolution.extension.slideanims.min.js" %}'></script>
+<script type='text/javascript' src='{% static "js/vendor/modernizr.min.js"%}'></script>
+<script type='text/javascript' src='{% static "js/vendor/jquery/js.cookie.min.js"%}'></script>
+<script type='text/javascript' src='{% static "js/vendor/superfish.js"%}'></script>
+<script type='text/javascript' src='{% static "js/custom/core.utils.js "%}'></script>
+<script type='text/javascript' src='{% static "js/custom/core.init.js"%} '></script>
+<script type='text/javascript' src='{% static "js/custom/init.js "%}'></script>
+<script type='text/javascript' src='{% static "js/custom/core.debug.js"%}'></script>
+<script type='text/javascript' src='{% static "js/custom/embed.min.js "%}'></script>
+<script type='text/javascript' src='{% static "js/custom/shortcodes.js"%}'></script>
+<script type='text/javascript' src='{% static "js/vendor/comp/comp_front.min.js"%}'></script>
+<script type='text/javascript' src='{% static "js/vendor/ui/core.min.js"%}'></script>
+<script type='text/javascript' src='{% static "js/vendor/ui/widget.min.js "%}'></script>
+<script type='text/javascript' src='{% static "js/vendor/ui/tabs.min.js"%}'></script>
+<script type='text/javascript' src='{% static "js/vendor/isotope.pkgd.min.js" %}'></script>
+<script type='text/javascript' src='{% static "js/vendor/swiper/swiper.js"%}'></script>
+
+</body>
+
+<!-- Copied from http://dairy-farm-html.ancorathemes.com/ by Cyotek WebCopy 1.7.0.600, Friday, March 27, 2020, 1:26:18 PM -->
+</html>
